@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #fff;
+    --second-bg-color: #e5e5e5;
+    --text-color: #1f242d;
+    --main-color: #118efc;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+body.dark-mode {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header {
+    /* background: #b5e2fa; */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.logo-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-content img{
+    width: 7rem;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+.homepage .car-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 230px; */
+    height: 100vh;
+    z-index: 99;
+}
+
+.car-container h1{
+    font-size: 5rem;
+    z-index: 100;
+    color: #f1faee;
+}
+
+.car-container h1 span{
+    color: var(--main-color);
+}
+
+.car-container p{
+    font-size: 1.7rem;
+    z-index: 100;
+    color: aliceblue;
+    background-color: #4d4b4b73;
+    padding-left: 3rem;
+}
+
+.car-container .header-pic{
+    filter: drop-shadow(0 0 15px #f0ead2);
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background img{
+    width: 100%;
+    object-fit: cover;
+}
