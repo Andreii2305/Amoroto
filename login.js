@@ -4,8 +4,8 @@ function Submit() {
     let message = document.getElementById("message");
     let loginBtn = document.getElementById("button");
 
-    let verUsername = "user";
-    let verPassword = "password";
+    let verUsername = "admin123";
+    let verPassword = "admin123";
 
     if(username == verUsername && password == verPassword){
         window.location.href = "home.html";
