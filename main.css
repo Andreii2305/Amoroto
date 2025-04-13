@@ -29,11 +29,6 @@ body {
     color: var(--text-color);
 }
 
-body.dark-mode {
-    background-color: var(--bg-color-light);
-    color: var(--text-color-light);
-}
-
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
@@ -92,7 +87,7 @@ section {
     justify-content: center;
     align-items: center;
     /* margin-top: 230px; */
-    height: 100vh;
+    height: 80vh;
     z-index: 99;
 }
 
@@ -127,7 +122,27 @@ section {
     z-index: -1;
 }
 
-.background img{
+.background .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the darkness */
+    z-index: 1;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.details, .header-pic {
+    z-index: 2;
+    position: relative;
 }
