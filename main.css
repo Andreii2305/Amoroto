@@ -27,6 +27,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 section {
@@ -81,6 +82,11 @@ section {
     color: var(--main-color);
 }
 
+.homepage{
+    position: relative;
+    padding-bottom: 100px;
+}
+
 .homepage .car-container{
     position: relative;
     display: flex;
@@ -128,7 +134,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Adjust the darkness */
+    background-color: rgba(0, 0, 0, 0.4); 
     z-index: 1;
 }
 
@@ -145,4 +151,58 @@ section {
 .details, .header-pic {
     z-index: 2;
     position: relative;
+}
+
+.dates {
+    position: absolute;
+    bottom: -40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    background-color: #669bbcc7;
+    padding: 50px 180px;
+    border-radius: 12px;
+    display: flex;
+    gap: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding-top: 40px;
+}
+
+.date-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.date-field label{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.date-field input{
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: #fdf0d5;
+}
+
+.date-field .button{
+    background-color: var(--main-color);
+    color: #fdf0d5;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+.date-field .button:hover{
+    box-shadow: 0 0 10px #fdf0d5;
+}
+
+.date-headings {
+    position: absolute;
+    top: -45px; 
+    left: 30px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #f0ead2 !important;
+ 
 }
